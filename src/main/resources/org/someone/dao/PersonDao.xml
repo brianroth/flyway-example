@@ -14,6 +14,9 @@
 	<select id="findByName" resultType="Person">
 		select * from person where name = #{name}
 	</select>
+	<select id="findByLastName" resultType="Person">
+		select * from person where last_name = #{lastName}
+	</select>
 
 	<select id="count" resultType="integer">
 		select count(id) from person
@@ -27,7 +30,7 @@
 		<selectKey resultType="int" order="BEFORE" keyProperty="id">
 			select 1+max(id) as id from person
 		</selectKey>
-		insert into person (id,name)
-		values (#{id},#{name})
+		insert into person (id,name, last_name)
+		values (#{id},#{name},#{lastName})
 	</insert>
 </mapper>
