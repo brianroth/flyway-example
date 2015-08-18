@@ -19,3 +19,7 @@ dependency-reduced-pom.xml
 hs_err_pid*
 /bin/
 /target/
+
+# Intellij Files
+.idea/*
+flyway-example.iml
