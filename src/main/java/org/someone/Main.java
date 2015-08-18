@@ -46,6 +46,13 @@ public class Main {
             slash = personDao.findByName("Slash");
             System.out.println("Found person " + slash);
 
+            slash.setBandName("SLASH");
+            personDao.update(slash);
+
+            slash = personDao.findByName("Slash");
+            System.out.println("Found person " + slash);
+
+
             System.out.println("After adding slash, there are " + personDao.count() + " people");
 
             personDao.delete(slash);

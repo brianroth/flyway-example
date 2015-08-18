@@ -18,4 +18,6 @@ public interface PersonDao {
     void insert(Person person);
     
     void delete(Person person);
+
+    void update(Person person);
 }

@@ -1,0 +1,1 @@
+ALTER TABLE PERSON ADD BAND varchar(100) DEFAULT 'Guns N'' Roses';
