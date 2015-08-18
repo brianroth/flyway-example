@@ -13,6 +13,8 @@ public interface PersonDao {
     
     Person findByName(String name);
     
+    Person findByLastName(String lastName);
+
     void insert(Person person);
     
     void delete(Person person);

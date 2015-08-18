@@ -40,6 +40,7 @@ public class Main {
 
             Person slash = new Person();
             slash.setName("Slash");
+            slash.setLastName("Bang");
             personDao.insert(slash);
 
             slash = personDao.findByName("Slash");
